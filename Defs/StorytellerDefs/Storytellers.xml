@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+  
+	<StorytellerDef>
+		<defName>Reika</defName>
+    <label>Reika Rabid</label>
+		<description>Reika will do whatever she fancies at any given moment. She does not care if you're ready.</description>
+    <portraitLarge>ReikaRabid/Reika</portraitLarge>
+    <portraitTiny>ReikaRabid/ReikaTiny</portraitTiny>
+    <listOrder>50</listOrder>
+    <desiredPopulationMin>9</desiredPopulationMin>
+    <desiredPopulationMax>25</desiredPopulationMax>
+    <desiredPopulationCritical>55</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_RandomMain">
+        <minDaysPassed>1</minDaysPassed>
+        <incidentMtb>0.55</incidentMtb>
+        <maxThreatBigIntervalDays>6</maxThreatBigIntervalDays>
+        <categoryWeights>
+          <Misc>8</Misc>
+          <OrbitalVisitor>2</OrbitalVisitor>
+          <AllyArrival>1.4</AllyArrival>
+          <ShipChunkDrop>0.02</ShipChunkDrop>
+          <ThreatSmall>1.75</ThreatSmall>
+          <ThreatBig>3</ThreatBig>
+        </categoryWeights>
+      </li>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>0</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+
+  
+  <StorytellerDef>
+	<defName>Bellatrix</defName>
+    <label>Bellatrix Bloodbather</label>
+    <description>Bellatrix is a bit of a bitch and loves her blood.</description>
+    <portraitLarge>BellatrixBalanced/Bellatrix</portraitLarge>
+    <portraitTiny>BellatrixBalanced/BellatrixTiny</portraitTiny>
+    <listOrder>55</listOrder>
+    <desiredPopulationMin>5</desiredPopulationMin>
+    <desiredPopulationMax>15</desiredPopulationMax>
+    <desiredPopulationCritical>35</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_RandomMain">
+        <minDaysPassed>1</minDaysPassed>
+        <incidentMtb>0.45</incidentMtb>
+        <maxThreatBigIntervalDays>8</maxThreatBigIntervalDays>
+        <categoryWeights>
+          <Misc>5.5</Misc>
+          <OrbitalVisitor>1</OrbitalVisitor>
+          <AllyArrival>1.1</AllyArrival>
+          <ShipChunkDrop>0.1</ShipChunkDrop>
+          <ThreatSmall>1.5</ThreatSmall>
+          <ThreatBig>3</ThreatBig>
+        </categoryWeights>
+      </li>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>0</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+  
+  
+</StorytellerDefs>
