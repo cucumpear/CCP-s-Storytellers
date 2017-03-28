@@ -15,53 +15,64 @@
     <comps>
       <li Class="StorytellerCompProperties_RandomMain">
         <minDaysPassed>1</minDaysPassed>
-        <incidentMtb>0.55</incidentMtb>
+        <incidentMtb>0.65</incidentMtb>
         <maxThreatBigIntervalDays>6</maxThreatBigIntervalDays>
         <categoryWeights>
-          <Misc>8</Misc>
-          <OrbitalVisitor>2</OrbitalVisitor>
+          <Misc>9</Misc>
+          <OrbitalVisitor>2.5</OrbitalVisitor>
           <AllyArrival>1.4</AllyArrival>
           <ShipChunkDrop>0.02</ShipChunkDrop>
-          <ThreatSmall>1.75</ThreatSmall>
+          <ThreatSmall>1</ThreatSmall>
           <ThreatBig>3</ThreatBig>
         </categoryWeights>
       </li>
       <li Class="StorytellerCompProperties_Disease">
         <minDaysPassed>0</minDaysPassed>
       </li>
-      <li Class="StorytellerCompProperties_JourneyOffer"/>
     </comps>
   </StorytellerDef>
 
   
   <StorytellerDef>
 	<defName>Bellatrix</defName>
-    <label>Bellatrix Bloodbather</label>
-    <description>Bellatrix is a bit of a bitch and loves her blood.</description>
+    <label>Bellatrix Balanced</label>
+    <description>Bellatrix is a bit of a bitch and loves her blood, though she will try to be somewhat balanced.</description>
     <portraitLarge>BellatrixBalanced/Bellatrix</portraitLarge>
     <portraitTiny>BellatrixBalanced/BellatrixTiny</portraitTiny>
     <listOrder>55</listOrder>
-    <desiredPopulationMin>5</desiredPopulationMin>
-    <desiredPopulationMax>15</desiredPopulationMax>
+    <desiredPopulationMin>8</desiredPopulationMin>
+    <desiredPopulationMax>20</desiredPopulationMax>
     <desiredPopulationCritical>35</desiredPopulationCritical>
-    <comps>
-      <li Class="StorytellerCompProperties_RandomMain">
-        <minDaysPassed>1</minDaysPassed>
-        <incidentMtb>0.45</incidentMtb>
-        <maxThreatBigIntervalDays>8</maxThreatBigIntervalDays>
-        <categoryWeights>
-          <Misc>5.5</Misc>
-          <OrbitalVisitor>1</OrbitalVisitor>
-          <AllyArrival>1.1</AllyArrival>
-          <ShipChunkDrop>0.1</ShipChunkDrop>
-          <ThreatSmall>1.5</ThreatSmall>
-          <ThreatBig>3</ThreatBig>
-        </categoryWeights>
+	<comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>4</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>1</mtbDaysThreatBig>
+        <threatOffDays>3.8</threatOffDays>
+        <threatOnDays>4</threatOnDays>
+        <minDaysBetweenThreatBigs>0.5</minDaysBetweenThreatBigs>
       </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>2.5</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>6</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>8</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
       <li Class="StorytellerCompProperties_Disease">
-        <minDaysPassed>0</minDaysPassed>
+        <minDaysPassed>15</minDaysPassed>
       </li>
-      <li Class="StorytellerCompProperties_JourneyOffer"/>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>CaravanTarget</category>
+      </li>
     </comps>
   </StorytellerDef>
   
