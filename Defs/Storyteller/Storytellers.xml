@@ -1,85 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <StorytellerDefs>
 
-  
-	<StorytellerDef>
-		<defName>Reika</defName>
-    <label>Reika Rabid</label>
-		<description>Reika will do whatever she fancies at any given moment. She does not care if you're ready.</description>
-    <portraitLarge>ReikaRabid/Reika</portraitLarge>
-    <portraitTiny>ReikaRabid/ReikaTiny</portraitTiny>
-    <listOrder>50</listOrder>
-    <desiredPopulationMin>9</desiredPopulationMin>
-    <desiredPopulationMax>25</desiredPopulationMax>
-    <desiredPopulationCritical>55</desiredPopulationCritical>
-    <comps>
-      <li Class="StorytellerCompProperties_RandomMain">
-		<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
-        <minDaysPassed>1</minDaysPassed>
-        <mtbDays>0.65</mtbDays>
-        <maxThreatBigIntervalDays>6</maxThreatBigIntervalDays>
-        <categoryWeights>
-          <Misc>9</Misc>
-          <OrbitalVisitor>2.5</OrbitalVisitor>
-          <AllyArrival>1.4</AllyArrival>
-		  <AllyAssistance>0.7</AllyAssistance>
-          <ShipChunkDrop>0.02</ShipChunkDrop>
-          <ThreatSmall>1</ThreatSmall>
-          <ThreatBig>3</ThreatBig>
-        </categoryWeights>
-      </li>
-	  <li Class="StorytellerCompProperties_CategoryMTB">
-		<allowedTargetTypes>World</allowedTargetTypes>
-		<minDaysPassed>1</minDaysPassed>
-		<category>Misc</category>
-		<mtbDays>5</mtbDays>
-	  </li>
-      <li Class="StorytellerCompProperties_Disease">
-        <minDaysPassed>0</minDaysPassed>
-      </li>
-      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
-        <category>CaravanTarget</category>
-      </li>
-    </comps>
-  </StorytellerDef>
-
-  
-  <StorytellerDef>
-	<defName>Bellatrix</defName>
+	<StorytellerDef Name="BaseStoryteller" Abstract="True">
+		<populationIntentFromTimeCurve>
+			<points>
+				<li>0, 0.15</li>
+				<li>3, 0.15</li>
+				<li>10, 1</li>
+			</points>
+		</populationIntentFromTimeCurve>
+	</StorytellerDef>
+	
+  <StorytellerDef ParentName="BaseStoryteller">
+		<defName>Bellatrix</defName>
     <label>Bellatrix Balanced</label>
     <description>Bellatrix is a bit of a bitch and loves her blood, though she will try to be somewhat balanced.</description>
     <portraitLarge>BellatrixBalanced/Bellatrix</portraitLarge>
     <portraitTiny>BellatrixBalanced/BellatrixTiny</portraitTiny>
     <listOrder>55</listOrder>
-    <desiredPopulationMin>8</desiredPopulationMin>
-    <desiredPopulationMax>20</desiredPopulationMax>
-    <desiredPopulationCritical>35</desiredPopulationCritical>
-	<comps>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 8</li>
+				<li>1, 4</li>
+				<li>8, 1</li>
+				<li>12, 0.5</li>
+				<li>20, 0</li>
+				<li>35, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+    <comps>
       <li Class="StorytellerCompProperties_ClassicIntro"/>
       <li Class="StorytellerCompProperties_ThreatCycle">
         <minDaysPassed>5</minDaysPassed>
-        <mtbDaysThreatSmall>4</mtbDaysThreatSmall>
+        <mtbDaysThreatSmall>3.5</mtbDaysThreatSmall>
         <mtbDaysThreatBig>1</mtbDaysThreatBig>
         <threatOffDays>3.8</threatOffDays>
         <threatOnDays>4</threatOnDays>
         <minDaysBetweenThreatBigs>0.5</minDaysBetweenThreatBigs>
       </li>
       <li Class="StorytellerCompProperties_CategoryMTB">
-		<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
-        <minDaysPassed>5</minDaysPassed>
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>5</minDaysPassed>
         <category>Misc</category>
-        <mtbDays>2.5</mtbDays>
-      </li>
-	  <li Class="StorytellerCompProperties_CategoryMTB">
-		<allowedTargetTypes>World</allowedTargetTypes>
-		<minDaysPassed>9</minDaysPassed>
-		<category>Misc</category>
-		<mtbDays>6</mtbDays>
-	  </li>
+				<mtbDays>2.5</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>9</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>6</mtbDays>
+			</li>
       <li Class="StorytellerCompProperties_AllyInteraction">
         <minDaysPassed>5</minDaysPassed>
         <baseMtb>6</baseMtb>
         <allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+      </li>
+      <li Class="StorytellerCompProperties_AllyAssistance">
+        <baseMtb>10</baseMtb>
       </li>
       <li Class="StorytellerCompProperties_SingleMTB">
         <incident>OrbitalTraderArrival</incident>
@@ -87,13 +64,63 @@
       </li>
       <li Class="StorytellerCompProperties_ShipChunkDrop"/>
       <li Class="StorytellerCompProperties_Disease">
-        <minDaysPassed>15</minDaysPassed>
+        <minDaysPassed>9</minDaysPassed>
       </li>
       <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
         <category>CaravanTarget</category>
       </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
     </comps>
   </StorytellerDef>
-  
-  
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>Reika</defName>
+    <label>Reika Rabid</label>
+		<description>Reika will do whatever she fancies at any given moment. She does not care if you're ready.</description>
+    <portraitLarge>ReikaRabid/Reika</portraitLarge>
+    <portraitTiny>ReikaRabid/ReikaTiny</portraitTiny>
+    <listOrder>50</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 8</li>
+				<li>1, 4</li>
+				<li>9, 1</li>
+				<li>14, 0.5</li>
+				<li>25, 0</li>
+				<li>55, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+		<comps>
+      <li Class="StorytellerCompProperties_RandomMain">
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>1</minDaysPassed>
+        <mtbDays>0.65</mtbDays>
+        <maxThreatBigIntervalDays>6</maxThreatBigIntervalDays>
+				<minIncChancePopulationIntentFactor>0.2</minIncChancePopulationIntentFactor>
+				<categoryWeights>
+          <Misc>5</Misc>
+          <OrbitalVisitor>1.5</OrbitalVisitor>
+					<ThreatBig>3</ThreatBig>
+					<ThreatSmall>1</ThreatSmall>
+					<AllyArrival>1.3</AllyArrival>
+					<AllyAssistance>0.7</AllyAssistance>
+					<ShipChunkDrop>0.02</ShipChunkDrop>
+        </categoryWeights>
+      </li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>1</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>5</mtbDays>
+			</li>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>0</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>CaravanTarget</category>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+
 </StorytellerDefs>
