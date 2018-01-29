@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "ToxicFallout"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "Flashstorm"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "Tornado"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "ShortCircuit"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "CropBlight"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "ColdSnap"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "HeatWave"]/category</xpath>
+	  <value><category>ThreatSmall</category></value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "ToxicFallout"]/durationDays</xpath>
+	  <value>
+	  	<durationDays>
+			<min>5</min>
+			<max>35</max>
+		</durationDays>
+	  </value>
+	</Operation>
+</Patch>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DifficultyDef>
+		<defName>CCPDiff6</defName>
+		<label>Absurd</label>
+		<description>Harder than you'd ever expect.\n\nBrutal combat, harsh circumstances. You really like pain, don't you?</description>
+		<difficulty>6</difficulty>
+		<threatScale>1.5</threatScale>
+		<colonistMoodOffset>-10</colonistMoodOffset>
+		<tradePriceFactorLoss>0.30</tradePriceFactorLoss>
+		<cropYieldFactor>0.8</cropYieldFactor>
+		<diseaseIntervalFactor>0.8</diseaseIntervalFactor>
+		<enemyReproductionRateFactor>1.1</enemyReproductionRateFactor>
+		<playerPawnInfectionChanceFactor>1.2</playerPawnInfectionChanceFactor>
+	</DifficultyDef>
+
+	<DifficultyDef>
+		<defName>CCPDiff7</defName>
+		<label>Apocalyptic</label>
+		<description>Cruel and unusual punishment.\n\nAngry colonists, large raids, many germs. Some people enjoy failing, I suppose.</description>
+		<difficulty>7</difficulty>
+		<threatScale>1.8</threatScale>
+		<colonistMoodOffset>-15</colonistMoodOffset>
+		<tradePriceFactorLoss>0.45</tradePriceFactorLoss>
+		<cropYieldFactor>0.7</cropYieldFactor>
+		<diseaseIntervalFactor>0.7</diseaseIntervalFactor>
+		<enemyReproductionRateFactor>1.1</enemyReproductionRateFactor>
+		<playerPawnInfectionChanceFactor>1.5</playerPawnInfectionChanceFactor>
+	</DifficultyDef>
+	
+</Defs>
