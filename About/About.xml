@@ -2,7 +2,12 @@
 <ModMetaData>
   <name>CucumPear's Storytellers</name>
   <author>cucumpear</author>
-  <targetVersion>0.18.0</targetVersion>
+  <targetVersion>0.19.0</targetVersion>
   <description>Both Reika and Bellatrix hit hard and fast. Call on them when Randy has turned into a comfy stroll through the park. Bellatrix might be less random than Reika, but don't underestimate her.
-  I highly recommend combining this mod with Marvin's Sometimes Raids Go Wrong for more hilarity.</description>
+  Gary, on the other hand, loves to give. He will throw traders, drops and weather at you aplenty, but beware! On the rare occasions when he does send a raid it will be a big one.
+  
+ Important note: To make Gary work properly I had to re-categorise some of the "neutral" events to "small threats." All of my storytellers are rebalanced, but vanilla and other modded storytellers are not. The differences are relatively minor, though.
+ New feature for the extra hardcore folks: two extra difficulties. Let me know how much fun/rage was had!
+ 
+ I highly recommend combining this mod with Marvin's Sometimes Raids Go Wrong for more hilarity.</description>
 </ModMetaData>

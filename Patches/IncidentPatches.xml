@@ -9,10 +9,6 @@
 	  <value><category>ThreatSmall</category></value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/IncidentDef[defName = "Tornado"]/category</xpath>
-	  <value><category>ThreatSmall</category></value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
 	  <xpath>*/IncidentDef[defName = "ShortCircuit"]/category</xpath>
 	  <value><category>ThreatSmall</category></value>
 	</Operation>
@@ -38,4 +34,14 @@
 		</durationDays>
 	  </value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/IncidentDef[defName = "VolcanicWinter"]/durationDays</xpath>
+	  <value>
+	  	<durationDays>
+			<min>15</min>
+			<max>75</max>
+		</durationDays>
+	  </value>
+	</Operation>
+	
 </Patch>

@@ -1,32 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
 	<DifficultyDef>
 		<defName>CCPDiff6</defName>
-		<label>Absurd</label>
-		<description>Harder than you'd ever expect.\n\nBrutal combat, harsh circumstances. You really like pain, don't you?</description>
+		<label>absurd</label>
+		<description>Harder than you'd ever expect.\n\nBrutal combat, harsh circumstances. You really like pain, don't you?\n\nRecommended for: Very experienced players who enjoy failing.</description>
+		<drawColor>(1,0.2,0.2)</drawColor>
+		<isExtreme>true</isExtreme>
 		<difficulty>6</difficulty>
-		<threatScale>1.5</threatScale>
-		<colonistMoodOffset>-10</colonistMoodOffset>
-		<tradePriceFactorLoss>0.30</tradePriceFactorLoss>
-		<cropYieldFactor>0.8</cropYieldFactor>
+		<threatScale>2.9</threatScale>
+		<adaptationEffectFactor>0.2</adaptationEffectFactor>
+		<colonistMoodOffset>-15</colonistMoodOffset>
+		<tradePriceFactorLoss>0.25</tradePriceFactorLoss>
+		<cropYieldFactor>0.75</cropYieldFactor>
+		<mineYieldFactor>0.75</mineYieldFactor>
+		<researchSpeedFactor>0.85</researchSpeedFactor>
 		<diseaseIntervalFactor>0.8</diseaseIntervalFactor>
-		<enemyReproductionRateFactor>1.1</enemyReproductionRateFactor>
-		<playerPawnInfectionChanceFactor>1.2</playerPawnInfectionChanceFactor>
+		<enemyReproductionRateFactor>1.2</enemyReproductionRateFactor>
+		<playerPawnInfectionChanceFactor>1.3</playerPawnInfectionChanceFactor>
+		<deepDrillInfestationChanceFactor>1.5</deepDrillInfestationChanceFactor>
+		<foodPoisonChanceFactor>1.35</foodPoisonChanceFactor>
+		<maintenanceCostFactor>1.2</maintenanceCostFactor>
+		<enemyDeathOnDownedChanceFactor>1.2</enemyDeathOnDownedChanceFactor>
+		<adaptationGrowthRateFactorOverZero>1.1</adaptationGrowthRateFactorOverZero>
+		<raidBeaconThreatCountFactor>1.4</raidBeaconThreatCountFactor>
 	</DifficultyDef>
-
+	
 	<DifficultyDef>
 		<defName>CCPDiff7</defName>
-		<label>Apocalyptic</label>
-		<description>Cruel and unusual punishment.\n\nAngry colonists, large raids, many germs. Some people enjoy failing, I suppose.</description>
+		<label>apocalyptic</label>
+		<description>Cruel and unusual punishment.\n\nAngry colonists, large raids, many germs.\n\nRecommended for: Nobody.</description>
+		<drawColor>(1,0.2,0.2)</drawColor>
+		<isExtreme>true</isExtreme>
 		<difficulty>7</difficulty>
-		<threatScale>1.8</threatScale>
-		<colonistMoodOffset>-15</colonistMoodOffset>
-		<tradePriceFactorLoss>0.45</tradePriceFactorLoss>
-		<cropYieldFactor>0.7</cropYieldFactor>
+		<threatScale>3.5</threatScale>
+		<adaptationEffectFactor>0.05</adaptationEffectFactor>
+		<colonistMoodOffset>-20</colonistMoodOffset>
+		<tradePriceFactorLoss>0.30</tradePriceFactorLoss>
+		<cropYieldFactor>0.65</cropYieldFactor>
+		<mineYieldFactor>0.65</mineYieldFactor>
+		<researchSpeedFactor>0.8</researchSpeedFactor>
 		<diseaseIntervalFactor>0.7</diseaseIntervalFactor>
-		<enemyReproductionRateFactor>1.1</enemyReproductionRateFactor>
+		<enemyReproductionRateFactor>1.5</enemyReproductionRateFactor>
 		<playerPawnInfectionChanceFactor>1.5</playerPawnInfectionChanceFactor>
+		<deepDrillInfestationChanceFactor>1.7</deepDrillInfestationChanceFactor>
+		<foodPoisonChanceFactor>1.5</foodPoisonChanceFactor>
+		<maintenanceCostFactor>1.5</maintenanceCostFactor>
+		<enemyDeathOnDownedChanceFactor>1.4</enemyDeathOnDownedChanceFactor>
+		<adaptationGrowthRateFactorOverZero>1.2</adaptationGrowthRateFactorOverZero>
+		<raidBeaconThreatCountFactor>1.6</raidBeaconThreatCountFactor>
 	</DifficultyDef>
 	
 </Defs>
